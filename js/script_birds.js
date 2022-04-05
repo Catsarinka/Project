@@ -31,10 +31,9 @@ img2.onclick = function(){
   modalImg.src = this.src;
 }
 
-// Получить элемент <span>, который закрывает модальный
+// КНОПКА
 var span = document.getElementsByClassName("close")[0];
 
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
 span.onclick = function() {
   modal.style.display = "none";
 }
