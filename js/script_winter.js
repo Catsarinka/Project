@@ -1,7 +1,6 @@
-// Получить модель
+// МОДАЛЬНОЕ ОКНО
 var modal = document.getElementById("myModal");
 
-// Получите изображение и вставьте его внутрь модального 
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 
@@ -61,10 +60,9 @@ img2.onclick = function(){
 
 
 
-// Получить элемент <span>, который закрывает модальный
+// КНОПКА
 var span = document.getElementsByClassName("close")[0];
 
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
 span.onclick = function() {
   modal.style.display = "none";
 }
