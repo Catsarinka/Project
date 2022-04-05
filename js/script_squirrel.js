@@ -1,7 +1,7 @@
 // МОДАЛЬНОЕ ОКНО
 var modal = document.getElementById("myModal");
 
-// Получите изображение и вставьте его внутрь модального 
+
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 
@@ -31,33 +31,7 @@ img2.onclick = function(){
   modalImg.src = this.src;
 }
 
-// img3.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-// }
 
-// img4.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-// }
-// img5.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-// }
-// img6.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-// }
-
-// img7.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-// }
-
-// img8.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-// }
 
 
 
