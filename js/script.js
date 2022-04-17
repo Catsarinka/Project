@@ -74,7 +74,6 @@ III.onclick = function () {
 
 
 
-
 // КНОПКА
 
 //  Элемент <span>
