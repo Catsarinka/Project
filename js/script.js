@@ -1,3 +1,47 @@
+// CANVAS
+
+var canvas;
+function initiate(){
+  var elem = document.getElementById('myCanvas');
+  canvas = elem.getContext('2d');
+
+  
+
+  addEventListener('mousemove', animation);
+}
+function animation(e){
+  canvas.clearRect(0, 0, 500, 300);
+
+  var xmouse = e.clientX;
+  var ymouse = e.clientY;
+  var xcenter = 205;
+  var ycenter = 115;
+  var ang = Math.atan2(ymouse - ycenter,xmouse - xcenter);
+  var x = xcenter + Math.round(Math.cos(ang) * 1);
+  var y = ycenter + Math.round(Math.sin(ang) * 1);
+
+  canvas.beginPath();
+  canvas.arc(xcenter, ycenter, 4, 0, Math.PI * 2, false);
+  canvas.moveTo(xcenter + 34, 115);
+  canvas.arc(xcenter + 30, 115, 4, 0, Math.PI * 2, false);
+  canvas.stroke();
+
+
+
+  canvas.beginPath();
+  canvas.moveTo(x + 10, y);
+  canvas.arc(x, y, 2, 0, Math.PI * 2, false);
+  canvas.moveTo(x + 60, y);
+  canvas.arc(x + 30, y, 2, 0, Math.PI * 2, false);
+
+canvas.fill();
+}
+addEventListener("load", initiate);
+
+
+
+
+
 // МОДАЛЬНЫЕ ОКНА
 
 // Модель
